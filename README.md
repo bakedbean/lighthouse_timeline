@@ -8,6 +8,8 @@ A simple application that fetches tickets based on state and tag, and displays a
 
 ### INSTALL
 `git clone git@github.com:bakedbean/lighthouse_timeline.git`
+`cd lighthouse_timeline`
+`bundle install`
 
 ### INSTRUCTIONS
 
