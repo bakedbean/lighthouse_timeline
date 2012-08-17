@@ -12,3 +12,4 @@ A simple application that fetches tickets based on state and tag, and displays a
 ### INSTRUCTIONS
 
 From the source directory: `shotgun index.rb`
+From a web browser: `http://localhost:9393`
