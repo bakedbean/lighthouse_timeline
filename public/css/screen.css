@@ -1,0 +1,31 @@
+body { font:13px/1.231; font-family:"Georgia",Times New Roman,Times,serif; *font-size:small; color: #333333; } 
+pre, code, kbd, samp { font-family:"Georgia",Times New Roman,Times,serif; }
+form {
+  margin: 0;
+  padding: 0;
+}
+body, select, input, textarea {
+  color: #444;
+}
+h1 {
+  margin: 0 0 5px 0;
+}
+#search {
+  position: absolute;
+  z-index: 1000;
+}
+#detail {
+  position: absolute;
+  margin: 5px 0 0 350px;
+}
+#timeline-embed{
+  margin:0px !important;
+  border:0px solid #CCC !important;
+  padding:0px !important;
+  -webkit-border-radius:0px !important;
+  -moz-border-radius:0px !important;
+  border-radius:0px !important;
+  -moz-box-shadow:0 0px 0px rgba(0, 0, 0, 0.25) !important;
+  -webkit-box-shadow:0 0px 0px rgba(0, 0, 0, 0.25) !important;
+  box-shadow:0px 0px 0px rgba(0, 0, 0, 0.25) !important;
+}

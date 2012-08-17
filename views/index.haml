@@ -1,0 +1,33 @@
+%html
+  %head
+    %title= "Berklee Lighthouse Visualizer"
+    %meta{ :content => "", :name => "Berklee Lighthouse Visualizer" }
+    %meta{ :content => "", :name => "Eben Goodman" }
+    %link{ :href => "css/screen.css", :media => "screen", :rel => "stylesheet" }
+    %script{ :src => "js/jquery-1.7.2.min.js", :type => "text/javascript" }
+    %script{ :src => "js/custom.js", :type => "text/javascript" }
+    
+  %body
+    #search
+      %h1 Search
+      %form{ :action => "/", :method => "get", :id => "search_frm" }
+        %label{ :for => ""} State:
+        %input{ :type => "textfield", :name => "state", :id => "state", :value => "#{@tickets[:state]}"}
+        %label{ :for => ""} Tagged:
+        %input{ :type => "textfield", :name => "tagged", :id => "tagged", :value => "#{@tickets[:tagged]}"}
+        %input{ :type => "submit", :value => "Submit" }
+
+    #timeline-embed
+    :javascript
+      var timeline_config = {
+      width: 	"100%",
+      height: "100%",
+      source: "/tickets.json/#{@tickets[:state]}/#{@tickets[:tagged]}",
+      start_at_end:	true,					//OPTIONAL
+      start_zoom_adjust: 5,
+      //hash_bookmark: true,					//OPTIONAL
+      css: 	'js/timeline/compiled/css/timeline.css',	//OPTIONAL
+      js: 	'js/timeline/compiled/js/timeline-min.js'	//OPTIONAL
+      }
+
+    %script{ :src => 'js/timeline/compiled/js/timeline-embed.js', :type => 'text/javascript'}
