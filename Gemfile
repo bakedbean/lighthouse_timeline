@@ -6,6 +6,7 @@ gem "haml"
 gem "shotgun"
 gem 'addressable'
 gem 'json'
+gem 'xml-simple'
 
 group :development, :test do
   gem "pry"

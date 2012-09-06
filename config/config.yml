@@ -2,3 +2,9 @@ lighthouse:
     account: berkleemusic
     username: egoodman2@berklee.edu
     password: 1lowbob
+
+google:
+  account: HOSTED_OR_GOOGLE
+  email: egoodman2@berklee.edu
+  password: 1l0wb0b5
+  service: wise

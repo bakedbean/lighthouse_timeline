@@ -35,7 +35,7 @@ class MyLighthouse
       tickets = tickets_created_at_format
       
       tickets.each do |t|
-        hash = { :startDate => t.created_at, :headline => "<a href='#{t.url}' target='_blank'>#{t.title}</a> (#{t.number})", :text => t.latest_body, :asset => { :media => "<blockquote>Assigned: #{t.assigned_user_name}<br/>Created by: #{t.creator_name}<br/>State: #{t.state}</blockquote>", :credit => "", :caption => "" } }
+        hash = { :startDate => t.created_at, :headline => "<a href='#{t.url}' target='_blank'>#{t.title}</a> (#{t.number})", :text => t.latest_body, :asset => { :media => "<blockquote>Assigned: #{t.assigned_user_name}<br/>Created by: #{t.creator_name}<br/>State: #{t.state}</blockquote><a href='#' id='tracker' onclick='Javascript: tracker(#{t.number})'>Add to Tracker</a>", :credit => "", :caption => "" } }
         date << hash
       end
 

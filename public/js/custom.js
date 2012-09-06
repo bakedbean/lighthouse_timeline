@@ -1,14 +1,8 @@
-$(document).ready(function(){
-  
-  $('.ticket').mouseover(function(){
-    
-    $.ajax({
-      url: '/ticket/'+$(this).html(),
-      success: function(data){
-        $('#detail').html(data);
-      }
-    });
-
+function tracker(number){
+  $.ajax({
+    url: '/tracker/'+number,
+    success: function(data){
+      console.log(data);
+    }
   });
-
-});
+}
