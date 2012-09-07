@@ -12,7 +12,6 @@ get '/' do
     @tickets = { :state => params[:state], :tagged => params[:tagged] }
   end
 
-  binding.pry
   haml :index
 end
 
@@ -22,11 +21,13 @@ get '/ticket/:id' do
   #haml :ticket
 end
 
-get '/tickets.json/:state/:tagged' do
-  content_type :json
+["/tickets.json/:state/:tagged?", "/tickets.json/:state?"].each do |path|
+  get path do
+    content_type :json
 
-  obj = MyLighthouse.new(params[:state],params[:tagged])
-  obj.tickets_to_timeline.to_json
+    obj = MyLighthouse.new(params[:state],params[:tagged])
+    obj.tickets_to_timeline.to_json
+  end
 end
 
 get '/tracker/:number' do
@@ -35,5 +36,10 @@ get '/tracker/:number' do
   
   obj = MyGoogleAPI.new(ticket)
   obj.authenticate
-  obj.update_worksheet
+
+  if !obj.check_for_existing_row
+    obj.update_worksheet
+  else
+    "false"
+  end
 end
