@@ -1,8 +1,7 @@
 function tracker(number){
   $.ajax({
     url: '/tracker/'+number,
-    success: function(data){
-      console.log(data);
-    }
+  }).done(function(data){
+    alert(data);
   });
 }

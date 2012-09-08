@@ -61,20 +61,25 @@ class MyGoogleAPI
 
   def check_for_existing_row
     sheets = fix_sheet_urls
-    found = false
 
     sheets.each do |sheet|
       response = get_feed(sheet)
       listfeed_doc = XmlSimple.xml_in(response.body, 'KeyAttr' => 'name')
 
-      listfeed_doc["entry"].each do |t|
-        if self.ticket.number.to_s == t["number"][0]
-          found = true
-          break
-        end
+      if !check_sheet_for_dupe(listfeed_doc)
+        return listfeed_doc["title"][0]["content"]
+      else
+        return "true"
       end
+    end
+  end
+  
+  def check_sheet_for_dupe(sheet)
+    found = false
 
-      if found
+    sheet["entry"].each do |t|
+      if self.ticket.number.to_s == t["number"][0]
+        found = true
         break
       end
     end
