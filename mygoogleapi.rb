@@ -15,10 +15,25 @@ class MyGoogleAPI
   end
 
   def authenticate
+    cl_string = ''
+    http = Net::HTTP.new('www.google.com', 443)
+    http.use_ssl = true
+
+    path = '/accounts/ClientLogin'
+
     self.headers = \
       { 'Content-Type' => 'application/x-www-form-urlencoded' }
 
-    self.headers["Authorization"] = "GoogleLogin auth=DQAAANIBAABv9swXUUYlYK1eAHFhMKjuJEk18NzMVSdiZalGPgtyT0eP__AUMJ1YR4gmm4DvSGf8MtQ18BIAU85EVT_d4SAHUh7dynpbRe0qK4mtsnpY03cFuz-c-ZaTe9JXs0B3zj9kmVEypYoYbAwtLGFglVUx4qbPsiJag8T5yn57o2cEbwPcviPxI6k1UJN1nftCWhkrn3OEOqPfntGfUXSQrU9QRmo44KwgO2w6aOMZDp337dbKD9f31yc0wrFAXKKjM2MNhaNmpGemmqfUsiVtXXEspNW7JwoYtjrM6VU_HLTgTqFxwMmE0SZyA6dD4CPy1mYLL-r11Aoa0iHraK2bm9Uu41BG0MDxaNbdWbrhPJSihxsHBikF0yI9Q9FtIX0o9dszHicY7Y9Y4qAfwcgnsB1B0aLeO6ymxYMRkvbnqnaf5c0CmMX2TE3GRVjNSMz-mF3N4kaeqZHOCUTgvBl5qwKm_MHxXEVpdls6BTtI3JJi_7b6UQsxxlO-K-1wyobMqy00qrNG1FDonM8KiDwvAErcyNNRAIvzdEXYWkKrWRJpdfF7taoZZWWxjrWf8AfeWFOUJiDq5fytu0Xw2R3Xq3JYSPfxZRr61XShVlpB1sGuUhi4wAJxxaFC_49492DU2Dc"
+    creds = \
+      'accountType=HOSTED_OR_GOOGLE&Email=egoodman2@berklee.edu' \
+      '&Passwd=1l0wb0b5' \
+      '&service=wise'
+
+    http.post(path, creds, headers) do |str|
+      cl_string = str[/Auth=(.*)/, 1]
+    end
+
+    self.headers["Authorization"] = "GoogleLogin auth=#{cl_string}"
   end
 
   def get_feed(uri)
@@ -98,7 +113,7 @@ class MyGoogleAPI
       "<gsx:number xmlns:gsx='http://schemas.google.com/spreadsheets/2006/extended'>" <<
       "=hyperlink(\"#{self.ticket.url}\";\"#{self.ticket.number}\")</gsx:number>" <<
       "<gsx:title xmlns:gsx='http://schemas.google.com/spreadsheets/2006/extended'>" <<
-      "#{self.ticket.title}</gsx:title>" <<
+      "#{CGI::escapeHTML(self.ticket.title)}</gsx:title>" <<
       "<gsx:assigned xmlns:gsx='http://schemas.google.com/spreadsheets/2006/extended'>" <<
       "#{self.ticket.assigned_user_name}</gsx:assigned>" <<
       "<gsx:created xmlns:gsx='http://schemas.google.com/spreadsheets/2006/extended'>" <<
