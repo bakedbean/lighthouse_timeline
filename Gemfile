@@ -10,6 +10,7 @@ gem 'xml-simple'
 
 group :development, :test do
   gem "pry"
+  gem "pry-remote"
   gem "awesome_print"
 end
 

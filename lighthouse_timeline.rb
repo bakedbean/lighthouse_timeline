@@ -1,13 +1,17 @@
 $LOAD_PATH.unshift(File.expand_path(File.dirname(__FILE__)))
 
 require 'sinatra'
+require 'sinatra/streaming'
 require 'json'
 require 'xmlsimple'
 require 'pry'
+require 'pry-remote'
 require './mylighthouse'
 require './mygoogleapi'
 
 class LighthouseTimeline < Sinatra::Base
+  helpers Sinatra::Streaming
+
   get '/' do
     if params[:state].nil?
       @tickets = { :state => "open", :tagged => "marketing" }
@@ -34,28 +38,32 @@ class LighthouseTimeline < Sinatra::Base
   end
 
   get '/tracker/:number' do
-    out = '' 
-    tObj = MyLighthouse.new('marketing','open')
-    ticket = tObj.get_ticket(params[:number])
-    
-    obj = MyGoogleAPI.new(ticket)
-    obj.authenticate
-
-    sheets = obj.fix_sheet_urls
-    sheets.each do |sheet|
-      response = obj.get_feed(sheet)
-      listfeed_doc = XmlSimple.xml_in(response.body, 'KeyAttr' => 'name')
+    stream do |out|
+      found = nil
+      tObj = MyLighthouse.new('marketing','open')
+      ticket = tObj.get_ticket(params[:number])
       
-      if !obj.check_sheet_for_dupe(listfeed_doc)
-        out << "Not found in: #{listfeed_doc['title'][0]['content']}\n"
-      else
-        out << "Found in: #{listfeed_doc['title'][0]['content']}\n"
-        return out
+      obj = MyGoogleAPI.new(ticket)
+      obj.authenticate
+
+      sheets = obj.fix_sheet_urls
+
+        sheets.each do |sheet|
+          response = obj.get_feed(sheet)
+          listfeed_doc = XmlSimple.xml_in(response.body, 'KeyAttr' => 'name')
+          
+          if !obj.check_sheet_for_dupe(listfeed_doc)
+            out <<  "Not found in: #{listfeed_doc['title'][0]['content']}\n"
+          else
+            out << "Found in: #{listfeed_doc['title'][0]['content']}\n" 
+            found = true
+          end
+        end
+
+      if !found.nil?
+        result = obj.update_worksheet
+        out << "Ticket added to spreadsheet"
       end
     end
-
-    result = obj.update_worksheet
-    out << "Ticket added to Tracker spreadsheet"
-    return out
   end
 end
