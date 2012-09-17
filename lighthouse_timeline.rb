@@ -38,8 +38,9 @@ class LighthouseTimeline < Sinatra::Base
   end
 
   get '/tracker/:number' do
-    stream do |out|
+    #stream do |out|
       found = nil
+      out = ""
       tObj = MyLighthouse.new('marketing','open')
       ticket = tObj.get_ticket(params[:number])
       
@@ -57,13 +58,15 @@ class LighthouseTimeline < Sinatra::Base
           else
             out << "Found in: #{listfeed_doc['title'][0]['content']}\n" 
             found = true
+            break
           end
         end
 
-      if !found.nil?
+      if found.nil?
         result = obj.update_worksheet
         out << "Ticket added to spreadsheet"
       end
-    end
+    #end
+    out
   end
 end
