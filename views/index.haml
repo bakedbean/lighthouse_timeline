@@ -14,6 +14,8 @@
         %input{ :type => "textfield", :name => "state", :id => "state", :value => "#{@tickets[:state]}"}
         %label{ :for => ""} Tagged:
         %input{ :type => "textfield", :name => "tagged", :id => "tagged", :value => "#{@tickets[:tagged]}"}
+        %label{ :for => ""} Responsible:
+        %input{ :type => "textfield", :name => "responsible", :id => "responsible", :value => "#{@tickets[:responsible]}"}
         %input{ :type => "submit", :value => "Submit" }
 
     #timeline-embed
@@ -21,7 +23,7 @@
       var timeline_config = {
       width: 	"100%",
       height: "100%",
-      source: "/tickets.json/#{@tickets[:state]}/#{@tickets[:tagged]}",
+      source: "/tickets.json/#{@tickets[:state]}/#{@tickets[:tagged]}/#{@tickets[:responsible]}",
       start_at_end:	true,					//OPTIONAL
       start_zoom_adjust: 5,
       //hash_bookmark: true,					//OPTIONAL

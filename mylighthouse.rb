@@ -6,17 +6,31 @@ class MyLighthouse
       MyConfig.for("lighthouse")
     end
 
-    attr_accessor :state, :tagged
+    attr_accessor :state, :tagged, :responsible
 
-    def initialize(state,tagged)
+    def initialize(state,tagged,responsible)
       self.state = state
       self.tagged = tagged
+      self.responsible = responsible
       Lighthouse.account = self.class.config.account
       Lighthouse.authenticate(*self.class.config.credentials)
     end
 
     def marketing_tickets
-        Lighthouse::Ticket.find(:all, :params => { :project_id => 41389, :q => "state:#{state} tagged:#{tagged}" }, :limit => 100)
+      q = ""
+      unless state.nil?
+        q << "state:#{state}"
+      end
+
+      unless tagged.nil?
+        q << " tagged:#{tagged}"
+      end
+
+      unless responsible.nil?
+        q << " responsible:'#{responsible}'"
+      end
+
+      Lighthouse::Ticket.find(:all, :params => { :project_id => 41389, :q => "#{q}" }, :limit => 100)
     end
 
     def sort_tickets_by_created

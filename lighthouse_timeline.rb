@@ -19,6 +19,12 @@ class LighthouseTimeline < Sinatra::Base
       @tickets = { :state => params[:state], :tagged => params[:tagged] }
     end
 
+    if !params[:responsible].nil?
+      @tickets[:responsible] = params[:responsible]
+    else
+      @tickets[:responsible] = ""
+    end
+
     haml :index
   end
 
@@ -28,11 +34,11 @@ class LighthouseTimeline < Sinatra::Base
     #haml :ticket
   end
 
-  ["/tickets.json/:state/:tagged?", "/tickets.json/:state?"].each do |path|
+  ["/tickets.json/:state/:tagged/:responsible?", "/tickets.json/:state/:responsible?", "/tickets.json/:state/:tagged?", "/tickets.json/:state?"].each do |path|
     get path do
       content_type :json
 
-      obj = MyLighthouse.new(params[:state],params[:tagged])
+      obj = MyLighthouse.new(params[:state],params[:tagged],params[:responsible])
       obj.tickets_to_timeline.to_json
     end
   end
@@ -41,26 +47,26 @@ class LighthouseTimeline < Sinatra::Base
     #stream do |out|
       found = nil
       out = ""
-      tObj = MyLighthouse.new('marketing','open')
+      tObj = MyLighthouse.new('marketing','open','')
       ticket = tObj.get_ticket(params[:number])
-      
+
       obj = MyGoogleAPI.new(ticket)
       obj.authenticate
 
       sheets = obj.fix_sheet_urls
 
-        sheets.each do |sheet|
-          response = obj.get_feed(sheet)
-          listfeed_doc = XmlSimple.xml_in(response.body, 'KeyAttr' => 'name')
-          
-          if !obj.check_sheet_for_dupe(listfeed_doc)
-            out <<  "Not found in: #{listfeed_doc['title'][0]['content']}\n"
-          else
-            out << "Found in: #{listfeed_doc['title'][0]['content']}\n" 
-            found = true
-            break
-          end
+      sheets.each do |sheet|
+        response = obj.get_feed(sheet)
+        listfeed_doc = XmlSimple.xml_in(response.body, 'KeyAttr' => 'name')
+        
+        if !obj.check_sheet_for_dupe(listfeed_doc)
+          out <<  "Not found in: #{listfeed_doc['title'][0]['content']}\n"
+        else
+          out << "Found in: #{listfeed_doc['title'][0]['content']}\n" 
+          found = true
+          break
         end
+      end
 
       if found.nil?
         result = obj.update_worksheet
