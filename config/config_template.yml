@@ -1,0 +1,10 @@
+lighthouse:
+  account: ACCOUNT_NAME
+  username: USERNAME 
+  password: PASSWORD
+
+google:
+  account: HOSTED_OR_GOOGLE
+  email: EMAIL 
+  password: PASSWORD
+  service: wise
