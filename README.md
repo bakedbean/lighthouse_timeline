@@ -19,5 +19,6 @@ From a web browser: `http://localhost:9393`
 ### CUSTOMIZATIONS
 
 Includes an object for connecting to the Google Docs API
+
 Connects to a Berklee.edu specific spreadsheet
 Adds ticket data to a priority worksheet for support management
