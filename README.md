@@ -13,5 +13,11 @@ A simple application that fetches tickets based on state and tag, and displays a
 
 ### INSTRUCTIONS
 
-From the source directory: `shotgun index.rb`  
+From the source directory: `shotgun config.ru`  
 From a web browser: `http://localhost:9393`
+
+### CUSTOMIZATIONS
+
+Includes an object for connecting to the Google Docs API
+Connects to a Berklee.edu specific spreadsheet
+Adds ticket data to a priority worksheet for support management
