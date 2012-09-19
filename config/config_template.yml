@@ -1,3 +1,5 @@
+# replace the placeholders with real login values
+# rename the file to be just: config.yml
 lighthouse:
   account: ACCOUNT_NAME
   username: USERNAME 

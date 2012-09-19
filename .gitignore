@@ -5,5 +5,8 @@
 /doc/api
 /Gemfile.lock
 
+# don't track sensitive credentials
+/config/config.yml
+
 # vim stuff
 *.swp
