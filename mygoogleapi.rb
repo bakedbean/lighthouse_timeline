@@ -25,9 +25,9 @@ class MyGoogleAPI
       { 'Content-Type' => 'application/x-www-form-urlencoded' }
 
     creds = \
-      'accountType=HOSTED_OR_GOOGLE&Email=egoodman2@berklee.edu' \
-      '&Passwd=1l0wb0b5' \
-      '&service=wise'
+      "accountType=#{self.class.config.account}&Email=#{self.class.config.email}" \
+      "&Passwd=#{self.class.config.password}" \
+      "&service=#{self.class.config.service}"
 
     http.post(path, creds, headers) do |str|
       cl_string = str[/Auth=(.*)/, 1]
