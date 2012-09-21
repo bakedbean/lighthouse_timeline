@@ -11,14 +11,16 @@
   %body
     #search_btn
       %a(title="Search" href="#myModal" data-toggle="modal")
-        %img{ :src => "img/mag.png" }
+        %img{ :src => "img/mag.png" }>
       %span#search_txt
-        %b State:
-        #{@tickets[:state]},
-        %b Tagged:
-        #{@tickets[:tagged]},
-        %b Responsible:
-        #{@tickets[:responsible]}
+        %b State: 
+        %span><== &nbsp;#{@tickets[:state]}
+        - unless @tickets[:tagged].blank?
+          =", <b>Tagged:</b>"
+          %span><== &nbsp;#{@tickets[:tagged]}
+        - unless @tickets[:responsible].blank?
+          =", <b>Responsible:</b>"
+          %span><== &nbsp;#{@tickets[:responsible]}
     %div#myModal.modal.hide.fade
       %div.modal-header
         %button(class="close" data-dismiss="modal" aria-hidden="true") x
