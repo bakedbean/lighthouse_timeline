@@ -1,7 +1,7 @@
 $LOAD_PATH.unshift(File.expand_path(File.dirname(__FILE__)))
 
 require 'sinatra'
-require 'sinatra/streaming'
+#require 'sinatra/streaming'
 require 'json'
 require 'xmlsimple'
 require 'pry'
@@ -10,7 +10,7 @@ require './mylighthouse'
 require './mygoogleapi'
 
 class LighthouseTimeline < Sinatra::Base
-  helpers Sinatra::Streaming
+  #helpers Sinatra::Streaming
 
   get '/' do
     if params[:state].nil?
