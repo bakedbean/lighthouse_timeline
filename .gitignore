@@ -4,6 +4,7 @@
 /pkg
 /doc/api
 /Gemfile.lock
+/log
 
 # don't track sensitive credentials
 /config/config.yml
