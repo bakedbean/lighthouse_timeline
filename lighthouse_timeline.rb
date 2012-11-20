@@ -6,11 +6,18 @@ require 'json'
 require 'xmlsimple'
 require 'pry'
 require 'pry-remote'
+require 'logger'
 require './mylighthouse'
 require './mygoogleapi'
 
 class LighthouseTimeline < Sinatra::Base
   #helpers Sinatra::Streaming
+  
+  configure do
+    LOGGER = Logger.new("log/#{ENV['RACK_ENV']}_timeline.log")
+    enable :raise_errors
+    enable :logging, :dump_errors, :show_exceptions
+  end
 
   get '/' do
     if params[:state].nil?
@@ -74,5 +81,21 @@ class LighthouseTimeline < Sinatra::Base
       end
     #end
     out
+  end
+
+  helpers do
+    def logger
+      LOGGER
+    end
+  end
+
+  before {logger.info( {PATH_INFO: request.env["PATH_INFO"], QUERY_STRING: request.env["QUERY_STRING"], REMOTE_HOST: request.env["REMOTE_HOST"], REQUEST_URI: request.env["REQUEST_URI"], HTTP_USER_AGENT: request.env["HTTP_USER_AGENT"], PARAMS: params })}
+
+  after do
+    logger.info("Status: #{response.status}")
+    if response.status == 500
+      logger.info "Error: #{request.env['sinatra.error'].inspect}\n==== backtrace  ====\nError: #{request.env['sinatra.error'].backtrace.join("\n")}\n==== /backtrace ===="
+    end
+    logger.info response.body
   end
 end

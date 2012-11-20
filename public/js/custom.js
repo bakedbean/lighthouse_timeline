@@ -7,6 +7,7 @@
 function tracker(number){
   $.ajax({
     url: '/tracker/'+number,
+    timeout: 10000,
     error: function(jqXHR,textStatus,errorThrown){
       alert("The following error occurred: "+errorThrown+", Message: "+textStatus);
     },
