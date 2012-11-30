@@ -21,6 +21,11 @@
         - unless @tickets[:responsible].blank?
           =", <b>Responsible:</b>"
           %span><== &nbsp;#{@tickets[:responsible]}
+    %div#responseModal.modal.hide.fade
+      %div.modal-header
+        %button(class="close" data-dismiss="modal" aria-hidden="true") x
+        %h3#responseModalLabel Response
+        %div#responseModalContent
     %div#myModal.modal.hide.fade
       %div.modal-header
         %button(class="close" data-dismiss="modal" aria-hidden="true") x

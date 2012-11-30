@@ -316,3 +316,825 @@ I, [2012-11-20T14:48:17.831035 #47962]  INFO -- : get worksheet data - Try at: 2
 I, [2012-11-20T14:48:24.580667 #47962]  INFO -- : post feeds list - Try at: 2012-11-20 14:48:24 -0500 : 1
 I, [2012-11-20T14:48:24.744672 #47962]  INFO -- : Status: 200
 I, [2012-11-20T14:48:24.744855 #47962]  INFO -- : []
+I, [2012-11-20T22:44:11.680250 #5863]  INFO -- : {:PATH_INFO=>"/", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-20T22:44:11.985331 #5863]  INFO -- : Status: 200
+I, [2012-11-20T22:44:11.985541 #5863]  INFO -- : []
+I, [2012-11-20T22:44:13.104248 #5868]  INFO -- : {:PATH_INFO=>"/tickets.json/open/marketing/", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tickets.json/open/marketing/", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-20T22:44:13.831054 #5868]  INFO -- : Status: 200
+I, [2012-11-20T22:44:13.831298 #5868]  INFO -- : []
+I, [2012-11-20T22:44:18.965008 #5873]  INFO -- : {:PATH_INFO=>"/", :QUERY_STRING=>"state=open&tagged=biz&responsible=", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/?state=open&tagged=biz&responsible=", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{"state"=>"open", "tagged"=>"biz", "responsible"=>""}}
+I, [2012-11-20T22:44:19.231979 #5873]  INFO -- : Status: 200
+I, [2012-11-20T22:44:19.232184 #5873]  INFO -- : []
+I, [2012-11-20T22:44:19.989652 #5878]  INFO -- : {:PATH_INFO=>"/tickets.json/open/biz/", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tickets.json/open/biz/", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-20T22:44:20.553038 #5878]  INFO -- : Status: 200
+I, [2012-11-20T22:44:20.553277 #5878]  INFO -- : []
+I, [2012-11-20T22:44:30.841836 #5883]  INFO -- : {:PATH_INFO=>"/tracker/5197", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tracker/5197", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-20T22:44:32.258935 #5883]  INFO -- : get worksheet data - Try at: 2012-11-20 22:44:32 -0500 : 1
+I, [2012-11-20T22:44:35.276562 #5883]  INFO -- : post feeds list - Try at: 2012-11-20 22:44:35 -0500 : 1
+I, [2012-11-20T22:44:36.142959 #5883]  INFO -- : Status: 200
+I, [2012-11-20T22:44:36.143244 #5883]  INFO -- : []
+I, [2012-11-20T22:48:14.751930 #5893]  INFO -- : {:PATH_INFO=>"/tracker/5346", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tracker/5346", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-20T22:48:16.139099 #5893]  INFO -- : get worksheet data - Try at: 2012-11-20 22:48:16 -0500 : 1
+I, [2012-11-20T22:48:20.609111 #5893]  INFO -- : get worksheet data - Try at: 2012-11-20 22:48:20 -0500 : 2
+I, [2012-11-20T22:48:28.731111 #5893]  INFO -- : get worksheet data - Try at: 2012-11-20 22:48:28 -0500 : 3
+I, [2012-11-20T22:48:40.849387 #5893]  INFO -- : get worksheet data - Try at: 2012-11-20 22:48:40 -0500 : 4
+I, [2012-11-20T22:48:56.998251 #5893]  INFO -- : get worksheet data - Try at: 2012-11-20 22:48:56 -0500 : 5
+I, [2012-11-20T22:49:17.125539 #5893]  INFO -- : get worksheet data - Try at: 2012-11-20 22:49:17 -0500 : 6
+I, [2012-11-20T22:49:17.230226 #5893]  INFO -- : get worksheet data - Retries failed
+I, [2012-11-20T22:49:17.232074 #5893]  INFO -- : Status: 500
+I, [2012-11-20T22:49:17.232394 #5893]  INFO -- : Error: #<NoMethodError: undefined method `each' for nil:NilClass>
+==== backtrace  ====
+Error: /Users/eben/lighthouse_timeline/mygoogleapi.rb:65:in `block in get_worksheets'
+/Users/eben/lighthouse_timeline/rescue_wait_retry.rb:17:in `wrap'
+/Users/eben/lighthouse_timeline/mygoogleapi.rb:61:in `get_worksheets'
+/Users/eben/lighthouse_timeline/mygoogleapi.rb:74:in `fix_sheet_urls'
+/Users/eben/lighthouse_timeline/lighthouse_timeline.rb:63:in `block in <class:LighthouseTimeline>'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1212:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1212:in `block in compile!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `[]'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `block (3 levels) in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:801:in `route_eval'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `block (2 levels) in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:822:in `block in process_route'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:820:in `catch'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:820:in `process_route'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:784:in `block in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:783:in `each'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:783:in `route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:886:in `dispatch!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:719:in `block in call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `block in invoke'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `catch'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `invoke'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:719:in `call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:705:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/xss_header.rb:22:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/path_traversal.rb:16:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/json_csrf.rb:17:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/base.rb:47:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/xss_header.rb:22:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/logger.rb:15:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/head.rb:9:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/showexceptions.rb:21:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1334:in `block in call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1416:in `synchronize'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1334:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/lint.rb:48:in `_call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/lint.rb:36:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/showexceptions.rb:24:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/commonlogger.rb:20:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:86:in `proceed_as_child'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:31:in `call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:18:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/favicon.rb:12:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/static.rb:14:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/builder.rb:134:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+==== /backtrace ====
+I, [2012-11-20T22:49:17.232576 #5893]  INFO -- : []
+I, [2012-11-29T22:13:12.471285 #16155]  INFO -- : {:PATH_INFO=>"/", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:13:12.856098 #16155]  INFO -- : Status: 200
+I, [2012-11-29T22:13:12.856304 #16155]  INFO -- : []
+I, [2012-11-29T22:13:13.897120 #16160]  INFO -- : {:PATH_INFO=>"/tickets.json/open/marketing/", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tickets.json/open/marketing/", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:13:22.172805 #16165]  INFO -- : {:PATH_INFO=>"/", :QUERY_STRING=>"state=open&tagged=biz&responsible=", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/?state=open&tagged=biz&responsible=", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{"state"=>"open", "tagged"=>"biz", "responsible"=>""}}
+I, [2012-11-29T22:13:22.442924 #16165]  INFO -- : Status: 200
+I, [2012-11-29T22:13:22.443128 #16165]  INFO -- : []
+I, [2012-11-29T22:13:23.166154 #16170]  INFO -- : {:PATH_INFO=>"/tickets.json/open/biz/", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tickets.json/open/biz/", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:13:39.419425 #16176]  INFO -- : {:PATH_INFO=>"/", :QUERY_STRING=>"state=open&tagged=biz&responsible=", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/?state=open&tagged=biz&responsible=", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{"state"=>"open", "tagged"=>"biz", "responsible"=>""}}
+I, [2012-11-29T22:13:39.684132 #16176]  INFO -- : Status: 200
+I, [2012-11-29T22:13:39.684338 #16176]  INFO -- : []
+I, [2012-11-29T22:13:40.571326 #16181]  INFO -- : {:PATH_INFO=>"/tickets.json/open/biz/", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tickets.json/open/biz/", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:14:20.835172 #16186]  INFO -- : {:PATH_INFO=>"/", :QUERY_STRING=>"state=open&tagged=biz&responsible=", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/?state=open&tagged=biz&responsible=", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{"state"=>"open", "tagged"=>"biz", "responsible"=>""}}
+I, [2012-11-29T22:14:21.029212 #16186]  INFO -- : Status: 200
+I, [2012-11-29T22:14:21.029416 #16186]  INFO -- : []
+I, [2012-11-29T22:14:21.925972 #16191]  INFO -- : {:PATH_INFO=>"/tickets.json/open/biz/", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tickets.json/open/biz/", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:14:29.405621 #16160]  INFO -- : Status: 500
+I, [2012-11-29T22:14:29.406040 #16160]  INFO -- : Error: #<Errno::ETIMEDOUT: Operation timed out - connect(2)>
+==== backtrace  ====
+Error: /Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/net/http.rb:762:in `initialize'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/net/http.rb:762:in `open'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/net/http.rb:762:in `block in connect'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/timeout.rb:54:in `timeout'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/timeout.rb:99:in `timeout'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/net/http.rb:762:in `connect'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/net/http.rb:755:in `do_start'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/net/http.rb:744:in `start'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/net/http.rb:1284:in `request'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/net/http.rb:1026:in `get'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activeresource-3.2.8/lib/active_resource/connection.rb:113:in `block in request'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activesupport-3.2.8/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `instrument'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activeresource-3.2.8/lib/active_resource/connection.rb:110:in `request'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activeresource-3.2.8/lib/active_resource/connection.rb:80:in `block in get'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activeresource-3.2.8/lib/active_resource/connection.rb:218:in `with_auth'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activeresource-3.2.8/lib/active_resource/connection.rb:80:in `get'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activeresource-3.2.8/lib/active_resource/base.rb:901:in `find_every'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activeresource-3.2.8/lib/active_resource/base.rb:813:in `find'
+/Users/eben/lighthouse_timeline/mylighthouse.rb:33:in `marketing_tickets'
+/Users/eben/lighthouse_timeline/mylighthouse.rb:37:in `sort_tickets_by_created'
+/Users/eben/lighthouse_timeline/mylighthouse.rb:41:in `tickets_created_at_format'
+/Users/eben/lighthouse_timeline/mylighthouse.rb:49:in `tickets_to_timeline'
+/Users/eben/lighthouse_timeline/lighthouse_timeline.rb:49:in `block (2 levels) in <class:LighthouseTimeline>'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1212:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1212:in `block in compile!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `[]'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `block (3 levels) in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:801:in `route_eval'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `block (2 levels) in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:822:in `block in process_route'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:820:in `catch'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:820:in `process_route'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:784:in `block in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:783:in `each'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:783:in `route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:886:in `dispatch!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:719:in `block in call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `block in invoke'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `catch'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `invoke'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:719:in `call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:705:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/xss_header.rb:22:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/path_traversal.rb:16:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/json_csrf.rb:17:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/base.rb:47:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/xss_header.rb:22:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/logger.rb:15:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/head.rb:9:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/showexceptions.rb:21:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1334:in `block in call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1416:in `synchronize'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1334:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/lint.rb:48:in `_call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/lint.rb:36:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/showexceptions.rb:24:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/commonlogger.rb:20:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:86:in `proceed_as_child'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:31:in `call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:18:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/favicon.rb:12:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/static.rb:14:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/builder.rb:134:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+==== /backtrace ====
+I, [2012-11-29T22:14:29.406243 #16160]  INFO -- : []
+I, [2012-11-29T22:14:39.026182 #16170]  INFO -- : Status: 500
+I, [2012-11-29T22:14:39.026647 #16170]  INFO -- : Error: #<Errno::ETIMEDOUT: Operation timed out - connect(2)>
+==== backtrace  ====
+Error: /Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/net/http.rb:762:in `initialize'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/net/http.rb:762:in `open'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/net/http.rb:762:in `block in connect'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/timeout.rb:54:in `timeout'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/timeout.rb:99:in `timeout'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/net/http.rb:762:in `connect'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/net/http.rb:755:in `do_start'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/net/http.rb:744:in `start'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/net/http.rb:1284:in `request'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/net/http.rb:1026:in `get'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activeresource-3.2.8/lib/active_resource/connection.rb:113:in `block in request'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activesupport-3.2.8/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `instrument'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activeresource-3.2.8/lib/active_resource/connection.rb:110:in `request'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activeresource-3.2.8/lib/active_resource/connection.rb:80:in `block in get'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activeresource-3.2.8/lib/active_resource/connection.rb:218:in `with_auth'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activeresource-3.2.8/lib/active_resource/connection.rb:80:in `get'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activeresource-3.2.8/lib/active_resource/base.rb:901:in `find_every'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activeresource-3.2.8/lib/active_resource/base.rb:813:in `find'
+/Users/eben/lighthouse_timeline/mylighthouse.rb:33:in `marketing_tickets'
+/Users/eben/lighthouse_timeline/mylighthouse.rb:37:in `sort_tickets_by_created'
+/Users/eben/lighthouse_timeline/mylighthouse.rb:41:in `tickets_created_at_format'
+/Users/eben/lighthouse_timeline/mylighthouse.rb:49:in `tickets_to_timeline'
+/Users/eben/lighthouse_timeline/lighthouse_timeline.rb:49:in `block (2 levels) in <class:LighthouseTimeline>'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1212:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1212:in `block in compile!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `[]'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `block (3 levels) in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:801:in `route_eval'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `block (2 levels) in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:822:in `block in process_route'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:820:in `catch'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:820:in `process_route'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:784:in `block in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:783:in `each'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:783:in `route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:886:in `dispatch!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:719:in `block in call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `block in invoke'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `catch'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `invoke'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:719:in `call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:705:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/xss_header.rb:22:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/path_traversal.rb:16:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/json_csrf.rb:17:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/base.rb:47:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/xss_header.rb:22:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/logger.rb:15:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/head.rb:9:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/showexceptions.rb:21:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1334:in `block in call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1416:in `synchronize'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1334:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/lint.rb:48:in `_call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/lint.rb:36:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/showexceptions.rb:24:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/commonlogger.rb:20:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:86:in `proceed_as_child'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:31:in `call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:18:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/favicon.rb:12:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/static.rb:14:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/builder.rb:134:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+==== /backtrace ====
+I, [2012-11-29T22:14:39.026847 #16170]  INFO -- : []
+I, [2012-11-29T22:14:42.927806 #16191]  INFO -- : Status: 200
+I, [2012-11-29T22:14:42.928029 #16191]  INFO -- : []
+I, [2012-11-29T22:14:56.389193 #16181]  INFO -- : Status: 500
+I, [2012-11-29T22:14:56.389602 #16181]  INFO -- : Error: #<Errno::ETIMEDOUT: Operation timed out - connect(2)>
+==== backtrace  ====
+Error: /Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/net/http.rb:762:in `initialize'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/net/http.rb:762:in `open'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/net/http.rb:762:in `block in connect'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/timeout.rb:54:in `timeout'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/timeout.rb:99:in `timeout'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/net/http.rb:762:in `connect'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/net/http.rb:755:in `do_start'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/net/http.rb:744:in `start'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/net/http.rb:1284:in `request'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/net/http.rb:1026:in `get'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activeresource-3.2.8/lib/active_resource/connection.rb:113:in `block in request'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activesupport-3.2.8/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `instrument'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activeresource-3.2.8/lib/active_resource/connection.rb:110:in `request'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activeresource-3.2.8/lib/active_resource/connection.rb:80:in `block in get'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activeresource-3.2.8/lib/active_resource/connection.rb:218:in `with_auth'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activeresource-3.2.8/lib/active_resource/connection.rb:80:in `get'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activeresource-3.2.8/lib/active_resource/base.rb:901:in `find_every'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/activeresource-3.2.8/lib/active_resource/base.rb:813:in `find'
+/Users/eben/lighthouse_timeline/mylighthouse.rb:33:in `marketing_tickets'
+/Users/eben/lighthouse_timeline/mylighthouse.rb:37:in `sort_tickets_by_created'
+/Users/eben/lighthouse_timeline/mylighthouse.rb:41:in `tickets_created_at_format'
+/Users/eben/lighthouse_timeline/mylighthouse.rb:49:in `tickets_to_timeline'
+/Users/eben/lighthouse_timeline/lighthouse_timeline.rb:49:in `block (2 levels) in <class:LighthouseTimeline>'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1212:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1212:in `block in compile!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `[]'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `block (3 levels) in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:801:in `route_eval'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `block (2 levels) in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:822:in `block in process_route'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:820:in `catch'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:820:in `process_route'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:784:in `block in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:783:in `each'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:783:in `route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:886:in `dispatch!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:719:in `block in call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `block in invoke'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `catch'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `invoke'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:719:in `call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:705:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/xss_header.rb:22:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/path_traversal.rb:16:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/json_csrf.rb:17:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/base.rb:47:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/xss_header.rb:22:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/logger.rb:15:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/head.rb:9:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/showexceptions.rb:21:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1334:in `block in call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1416:in `synchronize'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1334:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/lint.rb:48:in `_call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/lint.rb:36:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/showexceptions.rb:24:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/commonlogger.rb:20:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:86:in `proceed_as_child'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:31:in `call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:18:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/favicon.rb:12:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/static.rb:14:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/builder.rb:134:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+==== /backtrace ====
+I, [2012-11-29T22:14:56.389835 #16181]  INFO -- : []
+I, [2012-11-29T22:15:30.188181 #16406]  INFO -- : {:PATH_INFO=>"/", :QUERY_STRING=>"state=open&tagged=biz&responsible=", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/?state=open&tagged=biz&responsible=", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{"state"=>"open", "tagged"=>"biz", "responsible"=>""}}
+I, [2012-11-29T22:15:30.386493 #16406]  INFO -- : Status: 200
+I, [2012-11-29T22:15:30.386702 #16406]  INFO -- : []
+I, [2012-11-29T22:15:31.327128 #16411]  INFO -- : {:PATH_INFO=>"/tickets.json/open/biz/", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tickets.json/open/biz/", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:15:32.078560 #16411]  INFO -- : Status: 200
+I, [2012-11-29T22:15:32.078790 #16411]  INFO -- : []
+I, [2012-11-29T22:15:41.402586 #16416]  INFO -- : {:PATH_INFO=>"/tracker/5403", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tracker/5403", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:15:42.598581 #16416]  INFO -- : get worksheet data - Try at: 2012-11-29 22:15:42 -0500 : 1
+I, [2012-11-29T22:15:47.047130 #16416]  INFO -- : post feeds list - Try at: 2012-11-29 22:15:47 -0500 : 1
+I, [2012-11-29T22:15:50.101944 #16416]  INFO -- : Status: 200
+I, [2012-11-29T22:15:50.102251 #16416]  INFO -- : []
+I, [2012-11-29T22:18:01.942764 #16424]  INFO -- : {:PATH_INFO=>"/tracker/5330", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tracker/5330", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:18:03.816816 #16424]  INFO -- : get worksheet data - Try at: 2012-11-29 22:18:03 -0500 : 1
+I, [2012-11-29T22:18:04.715341 #16424]  INFO -- : Status: 200
+I, [2012-11-29T22:18:04.715549 #16424]  INFO -- : []
+I, [2012-11-29T22:19:19.813541 #16430]  INFO -- : {:PATH_INFO=>"/tracker/5403", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tracker/5403", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:19:20.933362 #16430]  INFO -- : get worksheet data - Try at: 2012-11-29 22:19:20 -0500 : 1
+I, [2012-11-29T22:19:23.610260 #16430]  INFO -- : Status: 200
+I, [2012-11-29T22:19:23.610490 #16430]  INFO -- : []
+I, [2012-11-29T22:19:30.565565 #16436]  INFO -- : {:PATH_INFO=>"/", :QUERY_STRING=>"state=open&tagged=biz&responsible=", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/?state=open&tagged=biz&responsible=", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{"state"=>"open", "tagged"=>"biz", "responsible"=>""}}
+I, [2012-11-29T22:19:30.762884 #16436]  INFO -- : Status: 200
+I, [2012-11-29T22:19:30.763094 #16436]  INFO -- : []
+I, [2012-11-29T22:19:31.625799 #16441]  INFO -- : {:PATH_INFO=>"/tickets.json/open/biz/", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tickets.json/open/biz/", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:19:32.106334 #16441]  INFO -- : Status: 200
+I, [2012-11-29T22:19:32.106572 #16441]  INFO -- : []
+I, [2012-11-29T22:19:37.964899 #16446]  INFO -- : {:PATH_INFO=>"/tracker/5403", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tracker/5403", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:19:39.009691 #16446]  INFO -- : get worksheet data - Try at: 2012-11-29 22:19:39 -0500 : 1
+I, [2012-11-29T22:19:41.359608 #16446]  INFO -- : Status: 200
+I, [2012-11-29T22:19:41.359840 #16446]  INFO -- : []
+I, [2012-11-29T22:26:38.257272 #16457]  INFO -- : {:PATH_INFO=>"/", :QUERY_STRING=>"state=open&tagged=biz&responsible=", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/?state=open&tagged=biz&responsible=", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{"state"=>"open", "tagged"=>"biz", "responsible"=>""}}
+I, [2012-11-29T22:26:38.534194 #16457]  INFO -- : Status: 200
+I, [2012-11-29T22:26:38.534392 #16457]  INFO -- : []
+I, [2012-11-29T22:26:39.360581 #16462]  INFO -- : {:PATH_INFO=>"/tickets.json/open/biz/", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tickets.json/open/biz/", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:26:39.904319 #16462]  INFO -- : Status: 200
+I, [2012-11-29T22:26:39.904545 #16462]  INFO -- : []
+I, [2012-11-29T22:27:32.496587 #16467]  INFO -- : {:PATH_INFO=>"/", :QUERY_STRING=>"state=open&tagged=biz&responsible=", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/?state=open&tagged=biz&responsible=", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{"state"=>"open", "tagged"=>"biz", "responsible"=>""}}
+I, [2012-11-29T22:27:32.694754 #16467]  INFO -- : Status: 200
+I, [2012-11-29T22:27:32.694962 #16467]  INFO -- : []
+I, [2012-11-29T22:27:33.474731 #16472]  INFO -- : {:PATH_INFO=>"/tickets.json/open/biz/", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tickets.json/open/biz/", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:27:34.044400 #16472]  INFO -- : Status: 200
+I, [2012-11-29T22:27:34.044637 #16472]  INFO -- : []
+I, [2012-11-29T22:27:37.669177 #16477]  INFO -- : {:PATH_INFO=>"/tracker/5403", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tracker/5403", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:27:39.202888 #16477]  INFO -- : get worksheet data - Try at: 2012-11-29 22:27:39 -0500 : 1
+I, [2012-11-29T22:27:43.459460 #16477]  INFO -- : get worksheet data - Try at: 2012-11-29 22:27:43 -0500 : 2
+I, [2012-11-29T22:27:51.624511 #16477]  INFO -- : get worksheet data - Try at: 2012-11-29 22:27:51 -0500 : 3
+I, [2012-11-29T22:27:58.542078 #16485]  INFO -- : {:PATH_INFO=>"/tracker/5403", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tracker/5403", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:27:59.540016 #16485]  INFO -- : get worksheet data - Try at: 2012-11-29 22:27:59 -0500 : 1
+I, [2012-11-29T22:28:03.691015 #16485]  INFO -- : get worksheet data - Try at: 2012-11-29 22:28:03 -0500 : 2
+I, [2012-11-29T22:28:03.806349 #16477]  INFO -- : get worksheet data - Try at: 2012-11-29 22:28:03 -0500 : 4
+I, [2012-11-29T22:28:11.924575 #16485]  INFO -- : get worksheet data - Try at: 2012-11-29 22:28:11 -0500 : 3
+I, [2012-11-29T22:28:19.958924 #16477]  INFO -- : get worksheet data - Try at: 2012-11-29 22:28:19 -0500 : 5
+I, [2012-11-29T22:28:24.156765 #16485]  INFO -- : get worksheet data - Try at: 2012-11-29 22:28:24 -0500 : 4
+I, [2012-11-29T22:28:37.603351 #16491]  INFO -- : {:PATH_INFO=>"/", :QUERY_STRING=>"state=open&tagged=biz&responsible=", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/?state=open&tagged=biz&responsible=", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{"state"=>"open", "tagged"=>"biz", "responsible"=>""}}
+I, [2012-11-29T22:28:37.806355 #16491]  INFO -- : Status: 200
+I, [2012-11-29T22:28:37.806960 #16491]  INFO -- : []
+I, [2012-11-29T22:28:38.804640 #16496]  INFO -- : {:PATH_INFO=>"/tickets.json/open/biz/", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tickets.json/open/biz/", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:28:39.217718 #16496]  INFO -- : Status: 200
+I, [2012-11-29T22:28:39.217945 #16496]  INFO -- : []
+I, [2012-11-29T22:28:40.124512 #16477]  INFO -- : get worksheet data - Try at: 2012-11-29 22:28:40 -0500 : 6
+I, [2012-11-29T22:28:40.315210 #16485]  INFO -- : get worksheet data - Try at: 2012-11-29 22:28:40 -0500 : 5
+I, [2012-11-29T22:28:40.987290 #16477]  INFO -- : get worksheet data - Retries failed
+I, [2012-11-29T22:28:40.989330 #16477]  INFO -- : Status: 500
+I, [2012-11-29T22:28:40.989542 #16477]  INFO -- : Error: #<NoMethodError: undefined method `each' for nil:NilClass>
+==== backtrace  ====
+Error: /Users/eben/lighthouse_timeline/mygoogleapi.rb:65:in `block in get_worksheets'
+/Users/eben/lighthouse_timeline/rescue_wait_retry.rb:17:in `wrap'
+/Users/eben/lighthouse_timeline/mygoogleapi.rb:61:in `get_worksheets'
+/Users/eben/lighthouse_timeline/mygoogleapi.rb:74:in `fix_sheet_urls'
+/Users/eben/lighthouse_timeline/lighthouse_timeline.rb:63:in `block in <class:LighthouseTimeline>'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1212:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1212:in `block in compile!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `[]'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `block (3 levels) in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:801:in `route_eval'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `block (2 levels) in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:822:in `block in process_route'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:820:in `catch'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:820:in `process_route'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:784:in `block in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:783:in `each'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:783:in `route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:886:in `dispatch!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:719:in `block in call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `block in invoke'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `catch'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `invoke'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:719:in `call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:705:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/xss_header.rb:22:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/path_traversal.rb:16:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/json_csrf.rb:17:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/base.rb:47:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/xss_header.rb:22:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/logger.rb:15:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/head.rb:9:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/showexceptions.rb:21:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1334:in `block in call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1416:in `synchronize'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1334:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/lint.rb:48:in `_call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/lint.rb:36:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/showexceptions.rb:24:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/commonlogger.rb:20:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:86:in `proceed_as_child'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:31:in `call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:18:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/favicon.rb:12:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/static.rb:14:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/builder.rb:134:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+==== /backtrace ====
+I, [2012-11-29T22:28:40.989700 #16477]  INFO -- : []
+I, [2012-11-29T22:28:43.379173 #16501]  INFO -- : {:PATH_INFO=>"/tracker/5403", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tracker/5403", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:28:44.505164 #16501]  INFO -- : get worksheet data - Try at: 2012-11-29 22:28:44 -0500 : 1
+I, [2012-11-29T22:28:48.649870 #16501]  INFO -- : get worksheet data - Try at: 2012-11-29 22:28:48 -0500 : 2
+I, [2012-11-29T22:28:56.798750 #16501]  INFO -- : get worksheet data - Try at: 2012-11-29 22:28:56 -0500 : 3
+I, [2012-11-29T22:29:00.980375 #16485]  INFO -- : get worksheet data - Try at: 2012-11-29 22:29:00 -0500 : 6
+I, [2012-11-29T22:29:01.249542 #16485]  INFO -- : get worksheet data - Retries failed
+I, [2012-11-29T22:29:01.251056 #16485]  INFO -- : Status: 500
+I, [2012-11-29T22:29:01.251362 #16485]  INFO -- : Error: #<NoMethodError: undefined method `each' for nil:NilClass>
+==== backtrace  ====
+Error: /Users/eben/lighthouse_timeline/mygoogleapi.rb:65:in `block in get_worksheets'
+/Users/eben/lighthouse_timeline/rescue_wait_retry.rb:17:in `wrap'
+/Users/eben/lighthouse_timeline/mygoogleapi.rb:61:in `get_worksheets'
+/Users/eben/lighthouse_timeline/mygoogleapi.rb:74:in `fix_sheet_urls'
+/Users/eben/lighthouse_timeline/lighthouse_timeline.rb:63:in `block in <class:LighthouseTimeline>'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1212:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1212:in `block in compile!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `[]'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `block (3 levels) in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:801:in `route_eval'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `block (2 levels) in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:822:in `block in process_route'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:820:in `catch'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:820:in `process_route'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:784:in `block in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:783:in `each'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:783:in `route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:886:in `dispatch!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:719:in `block in call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `block in invoke'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `catch'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `invoke'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:719:in `call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:705:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/xss_header.rb:22:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/path_traversal.rb:16:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/json_csrf.rb:17:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/base.rb:47:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/xss_header.rb:22:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/logger.rb:15:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/head.rb:9:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/showexceptions.rb:21:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1334:in `block in call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1416:in `synchronize'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1334:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/lint.rb:48:in `_call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/lint.rb:36:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/showexceptions.rb:24:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/commonlogger.rb:20:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:86:in `proceed_as_child'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:31:in `call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:18:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/favicon.rb:12:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/static.rb:14:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/builder.rb:134:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+==== /backtrace ====
+I, [2012-11-29T22:29:01.251545 #16485]  INFO -- : []
+I, [2012-11-29T22:29:08.971281 #16501]  INFO -- : get worksheet data - Try at: 2012-11-29 22:29:08 -0500 : 4
+I, [2012-11-29T22:29:25.142258 #16501]  INFO -- : get worksheet data - Try at: 2012-11-29 22:29:25 -0500 : 5
+I, [2012-11-29T22:29:45.997339 #16501]  INFO -- : get worksheet data - Try at: 2012-11-29 22:29:45 -0500 : 6
+I, [2012-11-29T22:29:46.191921 #16501]  INFO -- : get worksheet data - Retries failed
+I, [2012-11-29T22:29:46.193630 #16501]  INFO -- : Status: 500
+I, [2012-11-29T22:29:46.193935 #16501]  INFO -- : Error: #<NoMethodError: undefined method `each' for nil:NilClass>
+==== backtrace  ====
+Error: /Users/eben/lighthouse_timeline/mygoogleapi.rb:65:in `block in get_worksheets'
+/Users/eben/lighthouse_timeline/rescue_wait_retry.rb:17:in `wrap'
+/Users/eben/lighthouse_timeline/mygoogleapi.rb:61:in `get_worksheets'
+/Users/eben/lighthouse_timeline/mygoogleapi.rb:74:in `fix_sheet_urls'
+/Users/eben/lighthouse_timeline/lighthouse_timeline.rb:63:in `block in <class:LighthouseTimeline>'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1212:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1212:in `block in compile!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `[]'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `block (3 levels) in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:801:in `route_eval'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `block (2 levels) in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:822:in `block in process_route'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:820:in `catch'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:820:in `process_route'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:784:in `block in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:783:in `each'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:783:in `route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:886:in `dispatch!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:719:in `block in call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `block in invoke'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `catch'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `invoke'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:719:in `call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:705:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/xss_header.rb:22:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/path_traversal.rb:16:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/json_csrf.rb:17:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/base.rb:47:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/xss_header.rb:22:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/logger.rb:15:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/head.rb:9:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/showexceptions.rb:21:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1334:in `block in call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1416:in `synchronize'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1334:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/lint.rb:48:in `_call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/lint.rb:36:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/showexceptions.rb:24:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/commonlogger.rb:20:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:86:in `proceed_as_child'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:31:in `call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:18:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/favicon.rb:12:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/static.rb:14:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/builder.rb:134:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+==== /backtrace ====
+I, [2012-11-29T22:29:46.194200 #16501]  INFO -- : []
+I, [2012-11-29T22:29:49.369157 #16509]  INFO -- : {:PATH_INFO=>"/tracker/5403", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tracker/5403", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:29:50.441688 #16509]  INFO -- : get worksheet data - Try at: 2012-11-29 22:29:50 -0500 : 1
+I, [2012-11-29T22:29:54.930927 #16509]  INFO -- : get worksheet data - Try at: 2012-11-29 22:29:54 -0500 : 2
+I, [2012-11-29T22:30:03.076418 #16509]  INFO -- : get worksheet data - Try at: 2012-11-29 22:30:03 -0500 : 3
+I, [2012-11-29T22:30:15.241996 #16509]  INFO -- : get worksheet data - Try at: 2012-11-29 22:30:15 -0500 : 4
+I, [2012-11-29T22:30:31.729173 #16509]  INFO -- : get worksheet data - Try at: 2012-11-29 22:30:31 -0500 : 5
+I, [2012-11-29T22:30:51.869354 #16509]  INFO -- : get worksheet data - Try at: 2012-11-29 22:30:51 -0500 : 6
+I, [2012-11-29T22:30:52.145478 #16509]  INFO -- : get worksheet data - Retries failed
+I, [2012-11-29T22:30:52.147401 #16509]  INFO -- : Status: 500
+I, [2012-11-29T22:30:52.147669 #16509]  INFO -- : Error: #<NoMethodError: undefined method `each' for nil:NilClass>
+==== backtrace  ====
+Error: /Users/eben/lighthouse_timeline/mygoogleapi.rb:65:in `block in get_worksheets'
+/Users/eben/lighthouse_timeline/rescue_wait_retry.rb:17:in `wrap'
+/Users/eben/lighthouse_timeline/mygoogleapi.rb:61:in `get_worksheets'
+/Users/eben/lighthouse_timeline/mygoogleapi.rb:74:in `fix_sheet_urls'
+/Users/eben/lighthouse_timeline/lighthouse_timeline.rb:63:in `block in <class:LighthouseTimeline>'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1212:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1212:in `block in compile!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `[]'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `block (3 levels) in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:801:in `route_eval'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `block (2 levels) in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:822:in `block in process_route'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:820:in `catch'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:820:in `process_route'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:784:in `block in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:783:in `each'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:783:in `route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:886:in `dispatch!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:719:in `block in call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `block in invoke'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `catch'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `invoke'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:719:in `call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:705:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/xss_header.rb:22:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/path_traversal.rb:16:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/json_csrf.rb:17:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/base.rb:47:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/xss_header.rb:22:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/logger.rb:15:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/head.rb:9:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/showexceptions.rb:21:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1334:in `block in call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1416:in `synchronize'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1334:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/lint.rb:48:in `_call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/lint.rb:36:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/showexceptions.rb:24:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/commonlogger.rb:20:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:86:in `proceed_as_child'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:31:in `call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:18:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/favicon.rb:12:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/static.rb:14:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/builder.rb:134:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+==== /backtrace ====
+I, [2012-11-29T22:30:52.147886 #16509]  INFO -- : []
+I, [2012-11-29T22:31:19.246640 #16516]  INFO -- : {:PATH_INFO=>"/tracker/5330", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tracker/5330", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:31:20.688927 #16516]  INFO -- : get worksheet data - Try at: 2012-11-29 22:31:20 -0500 : 1
+I, [2012-11-29T22:31:21.292859 #16516]  INFO -- : Status: 200
+I, [2012-11-29T22:31:21.293079 #16516]  INFO -- : []
+I, [2012-11-29T22:33:08.918526 #16522]  INFO -- : {:PATH_INFO=>"/", :QUERY_STRING=>"state=open&tagged=biz&responsible=", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/?state=open&tagged=biz&responsible=", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{"state"=>"open", "tagged"=>"biz", "responsible"=>""}}
+I, [2012-11-29T22:33:09.195704 #16522]  INFO -- : Status: 200
+I, [2012-11-29T22:33:09.196052 #16522]  INFO -- : []
+I, [2012-11-29T22:33:10.099136 #16527]  INFO -- : {:PATH_INFO=>"/tickets.json/open/biz/", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tickets.json/open/biz/", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:33:10.512735 #16527]  INFO -- : Status: 200
+I, [2012-11-29T22:33:10.512966 #16527]  INFO -- : []
+I, [2012-11-29T22:33:15.468896 #16532]  INFO -- : {:PATH_INFO=>"/tracker/5330", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tracker/5330", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:33:16.528544 #16532]  INFO -- : get worksheet data - Try at: 2012-11-29 22:33:16 -0500 : 1
+I, [2012-11-29T22:33:18.091724 #16532]  INFO -- : Status: 200
+I, [2012-11-29T22:33:18.091949 #16532]  INFO -- : []
+I, [2012-11-29T22:34:38.823769 #16538]  INFO -- : {:PATH_INFO=>"/", :QUERY_STRING=>"state=open&tagged=biz&responsible=", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/?state=open&tagged=biz&responsible=", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{"state"=>"open", "tagged"=>"biz", "responsible"=>""}}
+I, [2012-11-29T22:34:39.095258 #16538]  INFO -- : Status: 200
+I, [2012-11-29T22:34:39.095483 #16538]  INFO -- : []
+I, [2012-11-29T22:34:40.035829 #16543]  INFO -- : {:PATH_INFO=>"/tickets.json/open/biz/", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tickets.json/open/biz/", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:34:40.657407 #16543]  INFO -- : Status: 200
+I, [2012-11-29T22:34:40.657629 #16543]  INFO -- : []
+I, [2012-11-29T22:34:47.803561 #16548]  INFO -- : {:PATH_INFO=>"/tracker/5330", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tracker/5330", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:34:49.180289 #16548]  INFO -- : get worksheet data - Try at: 2012-11-29 22:34:49 -0500 : 1
+I, [2012-11-29T22:34:50.369020 #16548]  INFO -- : Status: 200
+I, [2012-11-29T22:34:50.369292 #16548]  INFO -- : []
+I, [2012-11-29T22:35:58.535153 #16558]  INFO -- : {:PATH_INFO=>"/", :QUERY_STRING=>"state=open&tagged=biz&responsible=", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/?state=open&tagged=biz&responsible=", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{"state"=>"open", "tagged"=>"biz", "responsible"=>""}}
+I, [2012-11-29T22:35:58.728478 #16558]  INFO -- : Status: 200
+I, [2012-11-29T22:35:58.728701 #16558]  INFO -- : []
+I, [2012-11-29T22:35:59.570997 #16563]  INFO -- : {:PATH_INFO=>"/tickets.json/open/biz/", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tickets.json/open/biz/", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:36:00.076769 #16563]  INFO -- : Status: 200
+I, [2012-11-29T22:36:00.076990 #16563]  INFO -- : []
+I, [2012-11-29T22:36:05.003530 #16568]  INFO -- : {:PATH_INFO=>"/tracker/5330", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tracker/5330", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:36:05.996204 #16568]  INFO -- : get worksheet data - Try at: 2012-11-29 22:36:05 -0500 : 1
+I, [2012-11-29T22:36:07.786938 #16568]  INFO -- : Status: 200
+I, [2012-11-29T22:36:07.787170 #16568]  INFO -- : []
+I, [2012-11-29T22:36:19.701825 #16574]  INFO -- : {:PATH_INFO=>"/tracker/5197", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tracker/5197", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:36:20.768523 #16574]  INFO -- : get worksheet data - Try at: 2012-11-29 22:36:20 -0500 : 1
+I, [2012-11-29T22:36:21.336942 #16574]  INFO -- : Status: 200
+I, [2012-11-29T22:36:21.337187 #16574]  INFO -- : []
+I, [2012-11-29T22:37:11.260298 #16580]  INFO -- : {:PATH_INFO=>"/", :QUERY_STRING=>"state=open&tagged=biz&responsible=", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/?state=open&tagged=biz&responsible=", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{"state"=>"open", "tagged"=>"biz", "responsible"=>""}}
+I, [2012-11-29T22:37:11.520738 #16580]  INFO -- : Status: 200
+I, [2012-11-29T22:37:11.520958 #16580]  INFO -- : []
+I, [2012-11-29T22:37:12.406939 #16585]  INFO -- : {:PATH_INFO=>"/tickets.json/open/biz/", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tickets.json/open/biz/", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:37:12.888587 #16585]  INFO -- : Status: 200
+I, [2012-11-29T22:37:12.888824 #16585]  INFO -- : []
+I, [2012-11-29T22:37:17.742689 #16590]  INFO -- : {:PATH_INFO=>"/tracker/5403", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tracker/5403", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:37:19.381099 #16590]  INFO -- : get worksheet data - Try at: 2012-11-29 22:37:19 -0500 : 1
+I, [2012-11-29T22:37:22.055634 #16590]  INFO -- : Status: 200
+I, [2012-11-29T22:37:22.055854 #16590]  INFO -- : []
+I, [2012-11-29T22:38:25.411542 #16596]  INFO -- : {:PATH_INFO=>"/", :QUERY_STRING=>"state=open&tagged=biz&responsible=", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/?state=open&tagged=biz&responsible=", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{"state"=>"open", "tagged"=>"biz", "responsible"=>""}}
+I, [2012-11-29T22:38:25.703091 #16596]  INFO -- : Status: 200
+I, [2012-11-29T22:38:25.703300 #16596]  INFO -- : []
+I, [2012-11-29T22:38:26.593003 #16601]  INFO -- : {:PATH_INFO=>"/tickets.json/open/biz/", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tickets.json/open/biz/", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:38:27.451343 #16601]  INFO -- : Status: 200
+I, [2012-11-29T22:38:27.451589 #16601]  INFO -- : []
+I, [2012-11-29T22:38:30.579704 #16606]  INFO -- : {:PATH_INFO=>"/tracker/5403", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tracker/5403", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:38:31.965614 #16606]  INFO -- : get worksheet data - Try at: 2012-11-29 22:38:31 -0500 : 1
+I, [2012-11-29T22:38:36.478914 #16606]  INFO -- : get worksheet data - Try at: 2012-11-29 22:38:36 -0500 : 2
+I, [2012-11-29T22:38:45.177678 #16606]  INFO -- : get worksheet data - Try at: 2012-11-29 22:38:45 -0500 : 3
+I, [2012-11-29T22:38:57.322086 #16606]  INFO -- : get worksheet data - Try at: 2012-11-29 22:38:57 -0500 : 4
+I, [2012-11-29T22:39:13.495566 #16606]  INFO -- : get worksheet data - Try at: 2012-11-29 22:39:13 -0500 : 5
+I, [2012-11-29T22:39:33.696625 #16606]  INFO -- : get worksheet data - Try at: 2012-11-29 22:39:33 -0500 : 6
+I, [2012-11-29T22:39:33.879066 #16606]  INFO -- : get worksheet data - Retries failed
+I, [2012-11-29T22:39:33.880595 #16606]  INFO -- : Status: 500
+I, [2012-11-29T22:39:33.881142 #16606]  INFO -- : Error: #<NoMethodError: undefined method `each' for nil:NilClass>
+==== backtrace  ====
+Error: /Users/eben/lighthouse_timeline/mygoogleapi.rb:65:in `block in get_worksheets'
+/Users/eben/lighthouse_timeline/rescue_wait_retry.rb:17:in `wrap'
+/Users/eben/lighthouse_timeline/mygoogleapi.rb:61:in `get_worksheets'
+/Users/eben/lighthouse_timeline/mygoogleapi.rb:74:in `fix_sheet_urls'
+/Users/eben/lighthouse_timeline/lighthouse_timeline.rb:63:in `block in <class:LighthouseTimeline>'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1212:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1212:in `block in compile!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `[]'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `block (3 levels) in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:801:in `route_eval'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `block (2 levels) in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:822:in `block in process_route'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:820:in `catch'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:820:in `process_route'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:784:in `block in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:783:in `each'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:783:in `route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:886:in `dispatch!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:719:in `block in call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `block in invoke'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `catch'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `invoke'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:719:in `call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:705:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/xss_header.rb:22:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/path_traversal.rb:16:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/json_csrf.rb:17:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/base.rb:47:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/xss_header.rb:22:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/logger.rb:15:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/head.rb:9:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/showexceptions.rb:21:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1334:in `block in call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1416:in `synchronize'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1334:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/lint.rb:48:in `_call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/lint.rb:36:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/showexceptions.rb:24:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/commonlogger.rb:20:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:86:in `proceed_as_child'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:31:in `call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:18:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/favicon.rb:12:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/static.rb:14:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/builder.rb:134:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+==== /backtrace ====
+I, [2012-11-29T22:39:33.881313 #16606]  INFO -- : []
+I, [2012-11-29T22:39:43.173122 #16612]  INFO -- : {:PATH_INFO=>"/tracker/5330", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tracker/5330", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:39:45.100592 #16612]  INFO -- : get worksheet data - Try at: 2012-11-29 22:39:45 -0500 : 1
+I, [2012-11-29T22:40:25.502480 #16612]  INFO -- : Status: 200
+I, [2012-11-29T22:40:25.502700 #16612]  INFO -- : []
+I, [2012-11-29T22:40:31.699318 #16632]  INFO -- : {:PATH_INFO=>"/", :QUERY_STRING=>"state=open&tagged=biz&responsible=", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/?state=open&tagged=biz&responsible=", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{"state"=>"open", "tagged"=>"biz", "responsible"=>""}}
+I, [2012-11-29T22:40:31.899059 #16632]  INFO -- : Status: 200
+I, [2012-11-29T22:40:31.899326 #16632]  INFO -- : []
+I, [2012-11-29T22:40:32.825908 #16637]  INFO -- : {:PATH_INFO=>"/tickets.json/open/biz/", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tickets.json/open/biz/", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:40:33.310466 #16637]  INFO -- : Status: 200
+I, [2012-11-29T22:40:33.310728 #16637]  INFO -- : []
+I, [2012-11-29T22:41:09.544123 #16643]  INFO -- : {:PATH_INFO=>"/", :QUERY_STRING=>"state=open&tagged=biz&responsible=", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/?state=open&tagged=biz&responsible=", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{"state"=>"open", "tagged"=>"biz", "responsible"=>""}}
+I, [2012-11-29T22:41:09.745863 #16643]  INFO -- : Status: 200
+I, [2012-11-29T22:41:09.746169 #16643]  INFO -- : []
+I, [2012-11-29T22:41:10.663122 #16648]  INFO -- : {:PATH_INFO=>"/tickets.json/open/biz/", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tickets.json/open/biz/", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:41:11.357167 #16648]  INFO -- : Status: 200
+I, [2012-11-29T22:41:11.357388 #16648]  INFO -- : []
+I, [2012-11-29T22:41:19.291814 #16653]  INFO -- : {:PATH_INFO=>"/tracker/5330", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tracker/5330", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:41:20.747602 #16653]  INFO -- : get worksheet data - Try at: 2012-11-29 22:41:20 -0500 : 1
+I, [2012-11-29T22:41:21.455088 #16653]  INFO -- : Status: 200
+I, [2012-11-29T22:41:21.455293 #16653]  INFO -- : []
+I, [2012-11-29T22:42:10.178824 #16659]  INFO -- : {:PATH_INFO=>"/tracker/5197", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tracker/5197", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:42:11.249293 #16659]  INFO -- : get worksheet data - Try at: 2012-11-29 22:42:11 -0500 : 1
+I, [2012-11-29T22:42:15.730711 #16659]  INFO -- : get worksheet data - Try at: 2012-11-29 22:42:15 -0500 : 2
+I, [2012-11-29T22:42:23.908240 #16659]  INFO -- : get worksheet data - Try at: 2012-11-29 22:42:23 -0500 : 3
+I, [2012-11-29T22:42:36.145756 #16659]  INFO -- : get worksheet data - Try at: 2012-11-29 22:42:36 -0500 : 4
+I, [2012-11-29T22:42:53.216529 #16665]  INFO -- : {:PATH_INFO=>"/", :QUERY_STRING=>"state=open&tagged=admissions&responsible=", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/?state=open&tagged=admissions&responsible=", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{"state"=>"open", "tagged"=>"admissions", "responsible"=>""}}
+I, [2012-11-29T22:42:53.490359 #16665]  INFO -- : Status: 200
+I, [2012-11-29T22:42:53.490572 #16665]  INFO -- : []
+I, [2012-11-29T22:42:53.561508 #16659]  INFO -- : get worksheet data - Try at: 2012-11-29 22:42:53 -0500 : 5
+I, [2012-11-29T22:42:54.264633 #16670]  INFO -- : {:PATH_INFO=>"/tickets.json/open/admissions/", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tickets.json/open/admissions/", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:42:55.373738 #16670]  INFO -- : Status: 200
+I, [2012-11-29T22:42:55.373965 #16670]  INFO -- : []
+I, [2012-11-29T22:43:06.268719 #16675]  INFO -- : {:PATH_INFO=>"/tracker/5415", :QUERY_STRING=>"", :REMOTE_HOST=>"localhost", :REQUEST_URI=>"http://localhost:9393/tracker/5415", :HTTP_USER_AGENT=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11", :PARAMS=>{}}
+I, [2012-11-29T22:43:07.865558 #16675]  INFO -- : get worksheet data - Try at: 2012-11-29 22:43:07 -0500 : 1
+I, [2012-11-29T22:43:13.467147 #16675]  INFO -- : Status: 200
+I, [2012-11-29T22:43:13.467378 #16675]  INFO -- : []
+I, [2012-11-29T22:43:14.930079 #16659]  INFO -- : get worksheet data - Try at: 2012-11-29 22:43:14 -0500 : 6
+I, [2012-11-29T22:43:15.046648 #16659]  INFO -- : get worksheet data - Retries failed
+I, [2012-11-29T22:43:15.047972 #16659]  INFO -- : Status: 500
+I, [2012-11-29T22:43:15.048126 #16659]  INFO -- : Error: #<NoMethodError: undefined method `each' for nil:NilClass>
+==== backtrace  ====
+Error: /Users/eben/lighthouse_timeline/mygoogleapi.rb:65:in `block in get_worksheets'
+/Users/eben/lighthouse_timeline/rescue_wait_retry.rb:17:in `wrap'
+/Users/eben/lighthouse_timeline/mygoogleapi.rb:61:in `get_worksheets'
+/Users/eben/lighthouse_timeline/mygoogleapi.rb:74:in `fix_sheet_urls'
+/Users/eben/lighthouse_timeline/lighthouse_timeline.rb:63:in `block in <class:LighthouseTimeline>'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1212:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1212:in `block in compile!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `[]'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `block (3 levels) in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:801:in `route_eval'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `block (2 levels) in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:822:in `block in process_route'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:820:in `catch'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:820:in `process_route'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:784:in `block in route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:783:in `each'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:783:in `route!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:886:in `dispatch!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:719:in `block in call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `block in invoke'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `catch'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `invoke'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:719:in `call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:705:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/xss_header.rb:22:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/path_traversal.rb:16:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/json_csrf.rb:17:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/base.rb:47:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-protection-1.2.0/lib/rack/protection/xss_header.rb:22:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/logger.rb:15:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/head.rb:9:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/showexceptions.rb:21:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1334:in `block in call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1416:in `synchronize'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/sinatra-1.3.2/lib/sinatra/base.rb:1334:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/lint.rb:48:in `_call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/lint.rb:36:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/showexceptions.rb:24:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/commonlogger.rb:20:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:86:in `proceed_as_child'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:31:in `call!'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/loader.rb:18:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/favicon.rb:12:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/shotgun-0.9/lib/shotgun/static.rb:14:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/builder.rb:134:in `call'
+/Users/eben/.rvm/gems/ruby-1.9.3-p194@lighthouse/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/eben/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+==== /backtrace ====
+I, [2012-11-29T22:43:15.048252 #16659]  INFO -- : []

@@ -67,9 +67,9 @@ class LighthouseTimeline < Sinatra::Base
         listfeed_doc = XmlSimple.xml_in(response.body, 'KeyAttr' => 'name')
         
         if !obj.check_sheet_for_dupe(listfeed_doc)
-          out <<  "Not found in: #{listfeed_doc['title'][0]['content']}\n"
+          out <<  "Not found in: #{listfeed_doc['title'][0]['content']}<br />"
         else
-          out << "Found in: #{listfeed_doc['title'][0]['content']}\n" 
+          out << "Found in: #{listfeed_doc['title'][0]['content']}<br />" 
           found = true
           break
         end

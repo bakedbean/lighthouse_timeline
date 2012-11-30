@@ -7,12 +7,14 @@
 function tracker(number){
   $.ajax({
     url: '/tracker/'+number,
-    timeout: 10000,
+    timeout: 25000,
     error: function(jqXHR,textStatus,errorThrown){
-      alert("The following error occurred: "+errorThrown+", Message: "+textStatus);
+      $('#responseModalContent').html("The following error occurred: "+errorThrown+", Message: "+textStatus);
+      $('#responseModal').modal();
     },
     success: function(data){
-      console.log(data);
+      $('#responseModalContent').html(data);
+      $('#responseModal').modal();
     }
   });
 }
