@@ -3,7 +3,7 @@ class RescueWaitRetry
   attr_accessor :retry_times, :delay_factor, :current_retry, :logger
 
   def initialize(logger)
-    self.retry_times = 5
+    self.retry_times = 4
     self.delay_factor = 4 # Delay for each retry is the current iteration times 4
     self.current_retry = 0
     self.logger = logger

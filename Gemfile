@@ -1,4 +1,5 @@
 source :rubygems
+source 'https://gems.gemfury.com/65qezFdqnqXDGpG5LVjj/'
 
 gem "lighthouse-api"
 gem "sinatra"
@@ -7,6 +8,7 @@ gem "shotgun"
 gem 'addressable'
 gem 'json'
 gem 'xml-simple'
+gem 'acs_authentication'
 
 group :development, :test do
   gem "pry"

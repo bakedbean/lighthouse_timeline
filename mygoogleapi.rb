@@ -40,7 +40,7 @@ class MyGoogleAPI
   def get_feed(uri)
     uri = URI.parse(uri)
     Net::HTTP.start(uri.host, uri.port) do |http|
-      return http.get(uri.path, headers)
+      return http.get(uri.path, headers).body
     end
   end
 
@@ -57,14 +57,16 @@ class MyGoogleAPI
   def get_worksheets 
     worksheets = []
     worksheet_feed_uri = "http://spreadsheets.google.com/feeds/worksheets/#{self.tracker_spreadsheet_key}/private/full"
+    @worksheet_response = nil
 
     RescueWaitRetry.new(LighthouseTimeline::LOGGER).wrap "get worksheet data" do 
-      worksheet_response = get_feed(worksheet_feed_uri)
-      worksheet_data = XmlSimple.xml_in(worksheet_response.body, 'KeyAttr' => 'name')
+      @worksheet_response ||= get_feed(worksheet_feed_uri)
+    end
+
+    worksheet_data = XmlSimple.xml_in(@worksheet_response, 'KeyAttr' => 'name')
       
-      worksheet_data["entry"].each do |sheet|
-        worksheets << sheet["link"][0]["href"]
-      end
+    worksheet_data["entry"].each do |sheet|
+      worksheets << sheet["link"][0]["href"]
     end
 
     return worksheets
@@ -86,7 +88,7 @@ class MyGoogleAPI
 
     sheets.each do |sheet|
       response = get_feed(sheet)
-      listfeed_doc = XmlSimple.xml_in(response.body, 'KeyAttr' => 'name')
+      listfeed_doc = XmlSimple.xml_in(response, 'KeyAttr' => 'name')
 
       if !check_sheet_for_dupe(listfeed_doc)
         return listfeed_doc["title"][0]["content"]

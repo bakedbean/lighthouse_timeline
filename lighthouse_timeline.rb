@@ -1,7 +1,6 @@
 $LOAD_PATH.unshift(File.expand_path(File.dirname(__FILE__)))
 
 require 'sinatra'
-#require 'sinatra/streaming'
 require 'json'
 require 'xmlsimple'
 require 'pry'
@@ -11,7 +10,7 @@ require './mylighthouse'
 require './mygoogleapi'
 
 class LighthouseTimeline < Sinatra::Base
-  #helpers Sinatra::Streaming
+  #include AcsAuthentication::Base
   
   configure do
     LOGGER = Logger.new("log/#{ENV['RACK_ENV']}_timeline.log")
@@ -51,35 +50,33 @@ class LighthouseTimeline < Sinatra::Base
   end
 
   get '/tracker/:number' do
-    #stream do |out|
-      found = nil
-      out = ""
-      tObj = MyLighthouse.new('marketing','open','')
-      ticket = tObj.get_ticket(params[:number])
+    found = nil
+    out = ""
+    tObj = MyLighthouse.new('marketing','open','')
+    ticket = tObj.get_ticket(params[:number])
 
-      obj = MyGoogleAPI.new(ticket)
-      obj.authenticate
+    obj = MyGoogleAPI.new(ticket)
+    obj.authenticate
 
-      sheets = obj.fix_sheet_urls
+    sheets = obj.fix_sheet_urls
 
-      sheets.each do |sheet|
-        response = obj.get_feed(sheet)
-        listfeed_doc = XmlSimple.xml_in(response.body, 'KeyAttr' => 'name')
-        
-        if !obj.check_sheet_for_dupe(listfeed_doc)
-          out <<  "Not found in: #{listfeed_doc['title'][0]['content']}<br />"
-        else
-          out << "Found in: #{listfeed_doc['title'][0]['content']}<br />" 
-          found = true
-          break
-        end
+    sheets.each do |sheet|
+      response = obj.get_feed(sheet)
+      listfeed_doc = XmlSimple.xml_in(response, 'KeyAttr' => 'name')
+      
+      if !obj.check_sheet_for_dupe(listfeed_doc)
+        out <<  "Not found in: #{listfeed_doc['title'][0]['content']}<br />"
+      else
+        out << "Found in: #{listfeed_doc['title'][0]['content']}<br />" 
+        found = true
+        break
       end
+    end
 
-      if found.nil?
-        result = obj.update_worksheet
-        out << "Ticket added to spreadsheet"
-      end
-    #end
+    if found.nil?
+      result = obj.update_worksheet
+      out << "Ticket added to spreadsheet"
+    end
     out
   end
 
