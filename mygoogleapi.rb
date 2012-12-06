@@ -1,4 +1,3 @@
-require 'rescue_wait_retry'
 require 'net/https'
 
 class MyGoogleAPI
@@ -49,9 +48,7 @@ class MyGoogleAPI
     uri = URI.parse(uri)
     http = Net::HTTP.new(uri.host, uri.port)
 
-    RescueWaitRetry.new(LighthouseTimeline::LOGGER).wrap "post feeds list" do 
-      return http.post(uri.path, data, self.headers)
-    end
+    return http.post(uri.path, data, self.headers)
   end
 
   def get_worksheets 
@@ -59,9 +56,7 @@ class MyGoogleAPI
     worksheet_feed_uri = "http://spreadsheets.google.com/feeds/worksheets/#{self.tracker_spreadsheet_key}/private/full"
     @worksheet_response = nil
 
-    RescueWaitRetry.new(LighthouseTimeline::LOGGER).wrap "get worksheet data" do 
-      @worksheet_response ||= get_feed(worksheet_feed_uri)
-    end
+    @worksheet_response ||= get_feed(worksheet_feed_uri)
 
     worksheet_data = XmlSimple.xml_in(@worksheet_response, 'KeyAttr' => 'name')
       
