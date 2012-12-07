@@ -10,7 +10,6 @@ require './mylighthouse'
 require './mygoogleapi'
 
 class LighthouseTimeline < Sinatra::Base
-  #include AcsAuthentication::Base
   
   configure do
     LOGGER = Logger.new("log/#{ENV['RACK_ENV']}_timeline.log")
@@ -56,7 +55,9 @@ class LighthouseTimeline < Sinatra::Base
     ticket = tObj.get_ticket(params[:number])
 
     obj = MyGoogleAPI.new(ticket)
+    logger.info "Trying to authenticate to Google API"
     obj.authenticate
+    logger.info "Authentication successful"
 
     sheets = obj.fix_sheet_urls
 
@@ -65,8 +66,10 @@ class LighthouseTimeline < Sinatra::Base
       listfeed_doc = XmlSimple.xml_in(response, 'KeyAttr' => 'name')
       
       if !obj.check_sheet_for_dupe(listfeed_doc)
+        logger.info "Not found in: #{listfeed_doc['title'][0]['content']}"
         out <<  "Not found in: #{listfeed_doc['title'][0]['content']}<br />"
       else
+        logger.info "Found in: #{listfeed_doc['title'][0]['content']}" 
         out << "Found in: #{listfeed_doc['title'][0]['content']}<br />" 
         found = true
         break

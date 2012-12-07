@@ -33,6 +33,11 @@ class MyGoogleAPI
       cl_string = str[/Auth=(.*)/, 1]
     end
 
+    if cl_string.blank?
+      #logger.info "Failed to authenticate, trying again..."
+      self.authenticate
+    end
+
     self.headers["Authorization"] = "GoogleLogin auth=#{cl_string}"
   end
 
@@ -59,7 +64,7 @@ class MyGoogleAPI
     @worksheet_response ||= get_feed(worksheet_feed_uri)
 
     worksheet_data = XmlSimple.xml_in(@worksheet_response, 'KeyAttr' => 'name')
-      
+
     worksheet_data["entry"].each do |sheet|
       worksheets << sheet["link"][0]["href"]
     end
