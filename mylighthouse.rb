@@ -49,10 +49,10 @@ class MyLighthouse
       tickets = tickets_created_at_format
       
       tickets.each do |t|
-        if !t.respond_to?(:assigned_user_name)
-          t[:assigned_user_name] = ""
+        if !t.attributes.has_key?("assigned_user_name")
+          t.attributes[:assigned_user_name] = ""
         end
-        
+
         hash = { :startDate => t.created_at, :headline => "<a href='#{t.url}' target='_blank'>#{t.title}</a> (#{t.number})", :text => t.latest_body, :asset => { :media => "<blockquote>Assigned: #{t.assigned_user_name}<br/>Created by: #{t.creator_name}<br/>State: #{t.state}</blockquote><a href='#' id='tracker' onclick='Javascript: tracker(#{t.number})'>Add to Tracker</a>", :credit => "", :caption => "" } }
         date << hash
       end
