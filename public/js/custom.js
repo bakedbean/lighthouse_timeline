@@ -1,9 +1,3 @@
-/*$(document).ready(function(){*/
-  //$('#search_lnk').click(function(){
-    //$('#search').toggle();
-  //});
-/*});*/
-
 function tracker(number){
   $.ajax({
     url: '/tracker/'+number,
@@ -13,6 +7,7 @@ function tracker(number){
       $('#responseModal').modal();
     },
     error: function(jqXHR,textStatus,errorThrown){
+      //console.log(jqXHR);
       $('#responseModalContent').html("The following error occurred: "+errorThrown+", Message: "+textStatus);
     },
     success: function(data){
